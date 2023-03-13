@@ -8,7 +8,7 @@ export class DevicesService {
     ) {}
 
     async getAllDevices(): Promise<any> {
-        return await this.dBConfigService.findAll('users');
+        return await this.dBConfigService.findAll('devices');
     }
     async getDeviceById(id: number): Promise<any> {
         return await this.dBConfigService.findAll('devices', 'deviceId', id);
