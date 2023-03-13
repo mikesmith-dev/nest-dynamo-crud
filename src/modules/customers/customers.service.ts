@@ -17,6 +17,6 @@ export class CustomersService {
         return await this.dBConfigService.findAll('devices', 'custId', id);
     }
     async getCustomerById(id: number): Promise<any> {
-        return await this.dBConfigService.findItem('customers', id, 'CustomerId');
+        return await this.dBConfigService.findItem('customers', id, 'custId');
     }
 }
